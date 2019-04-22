@@ -1,0 +1,118 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #3B8BEB;
+    scroll-behavior: smooth;
+}
+
+/* header */
+
+.header {
+    height: 80px;
+    color: white;
+    background-color: #374785;
+}
+
+.title {
+    padding: 20px;
+    margin-left: 30px;
+    letter-spacing: 5px;
+    font-size: 35px;
+}
+
+/* End Header*/
+
+/*Navigation */
+
+ul {
+    background-color: white;
+}
+
+ul li {
+    display: inline;
+    border: 1px solid black;
+    color: black;
+}
+
+.nav {
+    float: right;
+    margin-top: 50px;
+    margin-right: 9%;
+    position: sticky;
+    top: 4px;
+}
+
+.nav a {
+    margin: 20px;
+    padding: 10px;
+    letter-spacing: 0.5px;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.nav a:hover {
+    background-color: white;
+    color: black;
+}
+
+.active {
+    background-color: black;
+    color: white;
+}
+
+/*End Navigation */
+
+/* Home Page */
+
+#home {
+    background-image: url("images/bg1.jpg");
+    background-attachment: fixed;
+}
+
+.content {
+    margin-top: 8%;
+    margin-right: 10%;
+    box-sizing: border-box;
+    display: flex;
+    padding: 20px;
+}
+
+.qoute {
+    padding-top: 20px;
+    margin-left: 20%;
+    color: white;
+    font-size: 40px;
+}
+
+.pic img {
+    width: 50%;
+    height: 500px;
+    float: right;
+    border-radius: 20px;
+}
+
+/* End Home page */
+
+/*Study page*/
+
+#study{
+    background-color: greenyellow;
+}
+
+/*End Study page*/
+
+#interset {
+    background-color: lightsalmon;
+}
+
+#about {
+    background-color: turquoise;
+}
+
+#contact {
+    background-color: limegreen;
+}
