@@ -121,7 +121,7 @@
 }
 
 
-@media screen and (max-width : 768px){
+@media screen and (max-width : 720px){
     .header .icon {
         display: block;
         float: right;
@@ -132,15 +132,15 @@
     }
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 720px){
     .header {
         position: sticky;
         top: 0;
-        font-size: 32px;
+        font-size: 28px;
     }
 
     .title {
-        font-size: 32px;
+        font-size: 28px;
         padding: 10px;
     }
     
