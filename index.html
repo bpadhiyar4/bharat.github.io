@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Bharat Padhiyar</title>
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -14,18 +15,23 @@
     <!-- Header-->
     <div class="header" id="header">
         <div class="title"><span>Bharat</span><span> Padhiyar</span></div>
-
+        <a href="javascript:void(0);" class="icon top-nav" onclick="showNav()"><i class="fa fa-bars"></i></a>
     </div>
     <!-- End Header-->
 
-    <!-- Navigation-->
-    <div class="nav">
+    <!--Mobile Navigation-->
+    <!--End Mobile Navigation-->
+
+    <!-- Desktop Navigation-->
+    <div class="nav" id="nav">
         <button onclick="window.location.href='#header'" class="top-nav active">Home</button>
         <button class="top-nav" onclick="window.location.href='#study'">Study</button>
         <button class="top-nav" onclick="window.location.href='#interset'">Interest</button>
         <button class="top-nav" onclick="window.location.href='#about'">About me</button>
         <button class="top-nav" onclick="window.location.href='#contact'">Contact me</button>
+
     </div>
+
     <!-- end Navigation-->
 
 
@@ -33,7 +39,7 @@
     <div id="home">
         <div class="content">
             <div class="qoute">
-                <h2>IT Engineer</h2>
+                <h2 class="title">IT Engineer</h2>
                 <em>Capable to work in Mobile Application Development, Web Development, Web Designing.</em><br>
                 <br>
                 <p>Pursuing Bechlor OF Engineering degree in Information Technology field from Saffrony Institute of
@@ -98,6 +104,17 @@
             </div>
         </div>
     </div>
+
+    <script>
+        function showNav() {
+            var x = document.getElementById("nav");
+            if (x.className === "nav") {
+                x.className += " responsive";
+            } else {
+                x.className = "nav";
+            }
+        }
+    </script>
 
 </body>
 
