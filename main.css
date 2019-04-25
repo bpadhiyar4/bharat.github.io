@@ -6,7 +6,7 @@
 }
 
 body{
-    overflow-x: hidden;
+    min-width: 320px
 }
 
 /* header */
@@ -67,14 +67,15 @@ body{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    width: 100%;
-    padding: 20px;
+    width: auto;
+    padding-top: 20px;
+    padding-left: 20px;
 }
 
 .qoute {
-    padding: 20px;
+    padding-top: 20px;
     color: white;
-    width: 30%;
+    max-width: 400px;
 }
 
 .pic img {
