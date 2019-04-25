@@ -124,6 +124,7 @@
 @media screen and (max-width : 768px){
     .header .icon {
         display: block;
+        float: right;
     }
 
     .nav {
@@ -135,6 +136,12 @@
     .header {
         position: sticky;
         top: 0;
+        font-size: 32px;
+    }
+
+    .title {
+        font-size: 32px;
+        padding: 10px;
     }
     
     .nav.responsive {
