@@ -10,9 +10,6 @@
 .header {
     color: white;
     background-color: #6d75f1;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
 }
 
 .title {
@@ -20,6 +17,7 @@
     margin-left: 30px;
     letter-spacing: 5px;
     font-size: 35px;
+    display: inline-block;
 }
 
 .header .icon {
@@ -65,7 +63,7 @@
 /* Home Page */
 
 #home {
-    background-color: #8333e9;   
+    background-color: #8333e9;
     min-height: 100vh;
 }
 
@@ -77,6 +75,7 @@
     width: auto;
     padding-top: 40px;
     padding-left: 20px;
+    padding-right: 20px;
 }
 
 .qoute {
@@ -98,9 +97,13 @@
 
 /*Study page*/
 
-#study{
+#study {
     background-color: greenyellow;
     min-height: 100vh;
+}
+
+.fa-times {
+    display: none;
 }
 
 /*End Study page*/
@@ -120,37 +123,53 @@
     min-height: 100vh;
 }
 
-
-@media screen and (max-width : 720px){
+@media screen and (max-width: 720px) {
     .header .icon {
         display: block;
         float: right;
     }
-
     .nav {
         display: none;
     }
 }
 
-@media screen and (max-width: 720px){
+@media screen and (max-width: 720px) {
     .header {
         position: sticky;
         top: 0;
         font-size: 28px;
+        transition: 1s ease-in-out;
     }
-
     .title {
         font-size: 28px;
         padding: 10px;
     }
-    
-    .nav.responsive {
+    .icon {
         position: relative;
+        top: 20px;
+        cursor: pointer;
+        transition: 0.5s ease-in-out;
     }
-    
-    .nav.responsive a {
+
+    #myToggleEnd {
+        transition: 1s ease-out;
+        display: none;
+    }
+    .mob-nav {
+        background-color: aliceblue;
+        position: relative;
+        display: none;
+    }
+    .mob-nav a {
         display: block;
-        text-align: left;
-        float: none;
+        text-decoration: none;
+        width: 100%;
+        text-align: center;
+        transition: 0.5s ease-in;
+        font-size: 16px;
+    }
+    .mob-nav a:hover {
+        background-color: black;
+        color: white;
     }
 }

@@ -15,15 +15,25 @@
     <!-- Header-->
     <div class="header" id="header">
         <div class="title"><span>Bharat</span><span> Padhiyar</span></div>
-        <button class="icon top-nav" id="myToggle"><i class="fa fa-bars"></i></button>
+        <button class="icon" id="myToggle" onclick="showNav()"><i class="fa fa-bars"></i></button>
+       
+       
+        <!--Mobile Navigation-->
+        <button class="icon" id="myToggleEnd" onclick="hideNav()"><i class="fa fa-times"></i></button>
+        <div class="mob-nav" id="mob-navigation">
+            <a href="#home" class="m-nav">Home</a>
+            <a href="#study" class="m-nav">Study</a>
+            <a href="#interset" class="m-nav">Interest</a>
+            <a href="#about" class="m-nav">About</a>
+            <a href="#contact" class="m-nav">Contact Me</a>
+        </div>
+        <!--End Mobile Navigation-->
+
     </div>
     <!-- End Header-->
 
-    <!--Mobile Navigation-->
-    <!--End Mobile Navigation-->
-
     <!-- Desktop Navigation-->
-    <div class="nav" id="nav">
+    <div class="nav" id="mynav">
         <button onclick="window.location.href='#header'" class="top-nav active">Home</button>
         <button class="top-nav" onclick="window.location.href='#study'">Study</button>
         <button class="top-nav" onclick="window.location.href='#interset'">Interest</button>
@@ -39,7 +49,7 @@
     <div id="home">
         <div class="content">
             <div class="qoute">
-                <h2 class="title">IT Engineer</h2>
+                <h2 style="letter-spacing: 1px;">IT Engineer</h2>
                 <em>Capable to work in Mobile Application Development, Web Development, Web Designing.</em><br>
                 <br>
                 <p>Pursuing Bechlor OF Engineering degree in Information Technology field from Saffrony Institute of
@@ -105,26 +115,7 @@
         </div>
     </div>
 
-    <script>
-        /*function showNav() {
-            var x = document.getElementById("nav");
-            if (x.className === "nav") {
-                x.className += " responsive";
-            } else {
-                x.className = "nav";
-            }
-        }*/
-
-
-        let mainNav = document.getElementById("nav");
-        let navbarToggle = document.getElementById("myToggle");
-
-        navbarToggle.addEventListener('click', function () {
-            mainNav.classList.toggle('active');
-        });
-
-    </script>
-
+   <script src="main.js"></script>
 </body>
 
 </html>
