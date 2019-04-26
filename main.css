@@ -21,11 +21,6 @@
 }
 
 .header .icon {
-    box-sizing: border-box;
-    width: 80px;
-    color: white;
-    background-color: inherit;
-    border: none;
     display: none;
 }
 
@@ -101,11 +96,6 @@
     background-color: greenyellow;
     min-height: 100vh;
 }
-
-.fa-times {
-    display: none;
-}
-
 /*End Study page*/
 
 #interset {
@@ -141,14 +131,18 @@
         transition: 1s ease-in-out;
     }
     .title {
-        font-size: 28px;
+        font-size: 20px;
         padding: 10px;
     }
-    .icon {
-        position: relative;
-        top: 20px;
-        cursor: pointer;
-        transition: 0.5s ease-in-out;
+    .header .icon {
+        box-sizing: border-box;
+        width: fit-content;
+        padding-top: 10px;
+        padding-right: 10px;
+        color: white;
+        background-color: inherit;
+        border: none;
+        display: block;
     }
 
     #myToggleEnd {
